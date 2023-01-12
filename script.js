@@ -103,7 +103,7 @@ function game()
     {
         
         //get the player's choice
-        playerChoice = (prompt("Rock, Paper or Scissors? Enter one.")).toLowerCase();
+        //playerChoice = (prompt("Rock, Paper or Scissors? Enter one.")).toLowerCase();
         computerChoice = getComputerChoice();
 
         //play a round
