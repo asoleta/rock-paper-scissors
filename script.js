@@ -92,6 +92,15 @@ function playRound(playerChoice, computerChoice)
 
 function game()
 {
+    const container = document.querySelector('.container');
+    const score = document.createElement('div');
+    const player = document.createElement('p');
+    const computer = document.createElement('p');
+
+    score.appendChild(player);
+    score.appendChild(computer);
+    container.appendChild(score);
+    
     let playerChoice;
     let computerChoice;
 
@@ -99,8 +108,8 @@ function game()
     let computerScore = 0;
     let flag;
     
-    for (let i = 0; i < 5; i++)
-    {
+    //for (let i = 0; i < 5; i++)
+    //{
         
         //get the player's choice
         //playerChoice = (prompt("Rock, Paper or Scissors? Enter one.")).toLowerCase();
@@ -119,11 +128,11 @@ function game()
         {
             playerScore++;
         }
-    }
+    //}
 
     //output results
-    console.log("Player: ", playerScore);
-    console.log("Computer: ", computerScore);
+    player.textContent = "Player: " + playerScore;
+    computer.textContent = "Computer: " + computerScore;
 
     if (computerScore > playerScore)
     {
@@ -141,4 +150,16 @@ function game()
     }
 }
 
-game();
+
+//Events
+const start = document.querySelector('.start');
+start.addEventListener('click', function (e) {
+    
+    //remove button once game starts
+    start.style.display = 'none';
+
+    //start game
+    game();
+})
+
+
