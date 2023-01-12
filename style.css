@@ -13,6 +13,7 @@
     font-size: 60px;
     color: white;
     text-shadow: 5px 5px 5px rgb(236, 72, 99);
+    padding-top: 50px;
 }
 
 .instructions {
@@ -20,6 +21,15 @@
     padding: 20px;
     color: white;
     text-shadow: 2px 3px 10px rgb(138, 2, 25);
+}
+
+.start {
+    border: none;
+    background-color: rgb(180, 50, 72);
+    color: white;
+    font-size: 15px;
+    padding: 15px;
+    border-radius: 10px;
 }
 
 .attacks {
