@@ -10,7 +10,33 @@
 }
 
 .title {
-    font-size: 50px;
+    font-size: 60px;
     color: white;
     text-shadow: 5px 5px 5px rgb(236, 72, 99);
+}
+
+.instructions {
+    font-size: 30px;
+    padding: 20px;
+    color: white;
+    text-shadow: 2px 3px 10px rgb(138, 2, 25);
+}
+
+.attacks {
+    display: flex;
+    flex-direction: column;
+}
+
+.images {
+    display: flex;
+    padding: 10px;
+}
+
+.images img {
+    padding: 30px 50px;
+    margin: 70px;
+    width: 80px;
+    height: auto;
+    border: 5px solid rgb(240, 153, 184);
+    box-shadow:  0 0 20px 5px white;
 }
