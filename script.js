@@ -1,13 +1,15 @@
-const player = document.querySelector('.player');
-const computer = document.querySelector('.computer');
+const playerTxt = document.querySelector('.player');
+const computerTxt = document.querySelector('.computer');
 const buttons = document.querySelectorAll('.attackBtn');
 
-let playerTxt;
-let computerTxt;
+let player;
+let computer;
 
 buttons.forEach(button => button.addEventListener("click", () => {
     player = button.textContent;
     computerTurn();
+    playerTxt.textContent = `Player: ${player}`;
+    computerTxt.textContent = `Computer: ${computer}`;
 }))
 
 function computerTurn()
